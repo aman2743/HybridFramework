@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report Theme: STANDARD, DARK -->
+        <theme>DARK</theme>
+
+        <!-- Document Title -->
+        <documentTitle>Automation Test Report</documentTitle>
+
+        <!-- Report Name -->
+        <reportName>Hybrid Framework Execution</reportName>
+
+        <!-- Report Headline -->
+        <reportHeadline>Test Execution Summary</reportHeadline>
+
+        <!-- Date Format -->
+        <dateFormat>yyyy-MM-dd</dateFormat>
+
+        <!-- Time Format -->
+        <timeFormat>HH:mm:ss</timeFormat>
+
+        <!-- Scripts -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    // Custom scripts if needed
+                });
+            ]]>
+        </scripts>
+
+        <!-- Styles -->
+        <styles>
+            <![CDATA[
+                .report-name { font-size: 24px; font-weight: bold; }
+                .test-pass { background-color: #28a745 !important; }
+                .test-fail { background-color: #dc3545 !important; }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

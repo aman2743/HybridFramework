@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <!-- Extent Report Listener -->
+        <listener class-name="utility.ExtentTestNGListener"/>
+        <!-- Optional: Keep your existing listener -->
+        <listener class-name="utility.ListenerTestNG"/>
+    </listeners>
+    <listeners>
+        <listener class-name="utility.TestNGReportListener"/>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <listener class-name="org.testng.reporters.TestHTMLReporter"/>
+    </listeners>
+
     <test name="Login Test">
         <classes>
             <class name="testClasses.LoginPageTest">

@@ -1,5 +1,4 @@
 package pageClasses;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,16 +40,16 @@ public class LoginPage {
     }
 
     // Alternative: Fluent pattern (returns next page)
-    public HomePage loginAndGoToHome(String username, String password) {
-        login(username, password);
-        return new HomePage(driver);
-    }
+//    public HomePage loginAndGoToHome(String username, String password) {
+//        login(username, password);
+//        return new HomePage(driver);
+//    }
 
     // Optional: Verification method
-    public boolean isLoginSuccessful() {
-         return eleUtil.isElementVisible(successMessage);
-        return true; // placeholder
-    }
+//    public boolean isLoginSuccessful() {
+//         return eleUtil.isElementVisible(successMessage);
+//        return true; // placeholder
+//    }
 }
 
 
